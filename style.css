@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.header {
+    background: #012c23;
+    padding: 45px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    display: flex;
+    gap: 30px;
+}
+.logo_img {
+    display: flex;
+    gap: 15px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: #c7c1c1;
+}
+.main {
+    background: #012c23;
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 80px 80px;
+}
+h1 {
+    color: #fff;
+    font-size: 2.8rem;
+    line-height: 60px;
+}
+p {
+    color: #fff;
+    line-height: 30px;
+    padding-bottom: 15px;
+}
+.btn {
+    border: none;
+    padding: 15px 25px;
+    color: #012c23;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #c7c1c1;
+}
+.btn:active {
+    transform: scale(0.95);
+}
+.flw {
+    width: 430px;
+}
+.filters {
+    background: rgb(191, 243, 191);
+    padding: 45px 80px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+input {
+    padding: 10px 15px;
+    border: 1px solid #012c23;
+}
+#category {
+    padding: 10px;
+}
+.srch {
+    background: #012c23;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+.srch:active {
+    transform: scale(0.95);
+}
+#products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.product {
+    width: 220px;
+    text-align: center;
+}
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+h2 {
+    padding: 40px 80px 80px;
+}
+
+@media screen and (max-width: 768px) {
+    .logo_img {
+        display: none;
+    }
+    .main {
+        flex-wrap: wrap;
+    }
+    .flw {
+        width: 380px;
+        padding-top: 60px;
+    }
+    .filters {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    #category {
+        padding: 10px;
+    }
+    .srch {
+        padding: 10px;
+    }
+    .filters {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .flw {
+        width: 320px;
+    }
+    #category {
+        padding: 10px;
+    }
+    .srch {
+        padding: 10px;
+    }
+    .filters {
+        gap: 15px;
+    }
+} 
